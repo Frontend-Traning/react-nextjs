@@ -1,0 +1,25 @@
+$bp-sm: 325px;
+$bp-md: 426px;
+$bp-lg: 1025px;
+$bp-xl: 1441px;
+
+@mixin mobile {
+  @media screen and (min-width: #{$bp-sm}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: #{$bp-md}) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (min-width: #{$bp-lg}) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: #{$bp-xl}) {
+    @content;
+  }
+}
